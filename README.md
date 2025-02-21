@@ -18,14 +18,14 @@ Launches the test runner in the interactive watch mode.\
  
 ### `yarn build`
 
-Features Implemented
+### Features Implemented
 ✅ Supports Controlled & Uncontrolled Modes
 ✅ Includes Bold, Italic, and Underline formatting
 ✅ Customizable Toolbar with renderToolbar prop
 ✅ TypeScript Support for better maintainability
 ✅ Unit tests for toolbar actions
 
-✅ Controlled Mode Example
+### ✅ Controlled Mode Example
 In controlled mode, the editor's state is managed externally, and changes are handled via the onChange prop.
 import { useState } from "react";
 import Wysiwyg from "./components/WYSIWYG";
@@ -44,7 +44,7 @@ editorStyle={{ border: "1px solid #ccc", padding: "10px" }}
 
 export default ControlledEditor;
 
-✅ Uncontrolled Mode Example
+### ✅ Uncontrolled Mode Example
 In uncontrolled mode, the editor manages its own state.
 
 import WysiwygEditor from "./components/WYSIWYG";
