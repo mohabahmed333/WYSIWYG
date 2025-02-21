@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -21,26 +17,47 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Features Implemented
+✅ Supports Controlled & Uncontrolled Modes
+✅ Includes Bold, Italic, and Underline formatting
+✅ Customizable Toolbar with renderToolbar prop
+✅ TypeScript Support for better maintainability
+✅ Unit tests for toolbar actions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+✅ Controlled Mode Example
+In controlled mode, the editor's state is managed externally, and changes are handled via the onChange prop.
+import { useState } from "react";
+import Wysiwyg from "./components/WYSIWYG";
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+const ControlledEditor = () => {
+const [editorState, setEditorState] = useState(null);
 
-### `yarn eject`
+return (
+<Wysiwyg
+value={editorState}
+onChange={setEditorState}
+editorStyle={{ border: "1px solid #ccc", padding: "10px" }}
+/>
+);
+};
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+export default ControlledEditor;
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✅ Uncontrolled Mode Example
+In uncontrolled mode, the editor manages its own state.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+import WysiwygEditor from "./components/WYSIWYG";
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+const UncontrolledEditor = () => {
+return <WysiwygEditor />;
+};
 
-## Learn More
+export default UncontrolledEditor;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📌 Contribution
+Want to contribute? Follow these steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Fork the repository.
+Create a new branch (feature/your-feature).
+Make changes and commit.
+Push to your branch and submit a pull request.
