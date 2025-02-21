@@ -1,3 +1,5 @@
+WYSIWYG Editor Component
+A reusable WYSIWYG (What You See Is What You Get) Editor built using React and Draft.js. Supports both controlled and uncontrolled modes and allows for toolbar customization.
 ## Available Scripts
 
 In the project directory, you can run:
@@ -13,8 +15,7 @@ You will also see any lint errors in the console.
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
+ 
 ### `yarn build`
 
 Features Implemented
