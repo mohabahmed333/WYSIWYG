@@ -1,3 +1,6 @@
+WYSIWYG Editor Component
+A reusable WYSIWYG (What You See Is What You Get) Editor built using React and Draft.js. Supports both controlled and uncontrolled modes and allows for toolbar customization.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -13,18 +16,19 @@ You will also see any lint errors in the console.
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
-Features Implemented
+### Features Implemented
+
 ✅ Supports Controlled & Uncontrolled Modes
 ✅ Includes Bold, Italic, and Underline formatting
 ✅ Customizable Toolbar with renderToolbar prop
 ✅ TypeScript Support for better maintainability
 ✅ Unit tests for toolbar actions
 
-✅ Controlled Mode Example
+### ✅ Controlled Mode Example
+
 In controlled mode, the editor's state is managed externally, and changes are handled via the onChange prop.
 import { useState } from "react";
 import Wysiwyg from "./components/WYSIWYG";
@@ -43,7 +47,8 @@ editorStyle={{ border: "1px solid #ccc", padding: "10px" }}
 
 export default ControlledEditor;
 
-✅ Uncontrolled Mode Example
+### ✅ Uncontrolled Mode Example
+
 In uncontrolled mode, the editor manages its own state.
 
 import WysiwygEditor from "./components/WYSIWYG";
