@@ -6,5 +6,8 @@
   "editor.formatOnSaveMode": "file",
   "files.autoSave": "onFocusChange",
   "vs-code-prettier-eslint.prettierLast": false,
-  "cSpell.words": ["unorderedlist"]
+  "cSpell.words": ["unorderedlist"],
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

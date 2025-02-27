@@ -14,7 +14,6 @@ const DraftEditor = ({
     if (alignment) {
       return `align-${alignment}`;
     }
-
     return "";
   }, []);
   return (

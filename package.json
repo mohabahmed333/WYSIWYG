@@ -27,7 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "commit": "yarn git-cz"
   },
   "eslintConfig": {
     "extends": [
@@ -48,8 +49,15 @@
     ]
   },
   "devDependencies": {
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.52.0",
     "prettier": "^3.1.0",
     "prettier-eslint": "^16.1.2"
+  },
+  "config": {
+    "commit ": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
